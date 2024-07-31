@@ -2,6 +2,8 @@ TAREA EXTRACLASE I del curso Algoritmos y Estructuras de Datos II (CE 1103)
 Profesor: Leonardo Andres Araya Martinez
 Estudiante: Saddy Guzman Rojas
 
+El programa requiere visual studio 2022. 
+
 Pasos para utilizar el programa:
 1-Inicializar 2 instancias de Visual Studio
 2-Abrir el programa, puede ser abriendo el Form1.cs
