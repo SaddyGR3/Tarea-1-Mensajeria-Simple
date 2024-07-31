@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp2
 {
-    partial class Form1
+    partial class Tarea1
     {
         /// <summary>
         ///  Required designer variable.
@@ -39,39 +39,41 @@
             labelenvio = new Label();
             labelmsg = new Label();
             buttonconnect = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // textBoxIP
             // 
-            textBoxIP.Location = new Point(307, 50);
+            textBoxIP.Location = new Point(85, 86);
             textBoxIP.Name = "textBoxIP";
             textBoxIP.Size = new Size(100, 23);
             textBoxIP.TabIndex = 0;
             // 
             // textBoxpuerto
             // 
-            textBoxpuerto.Location = new Point(307, 79);
+            textBoxpuerto.Location = new Point(85, 122);
             textBoxpuerto.Name = "textBoxpuerto";
             textBoxpuerto.Size = new Size(100, 23);
             textBoxpuerto.TabIndex = 1;
             // 
             // textenvio
             // 
-            textenvio.Location = new Point(307, 108);
+            textenvio.Location = new Point(33, 218);
             textenvio.Name = "textenvio";
             textenvio.Size = new Size(100, 23);
             textenvio.TabIndex = 2;
             // 
             // textrecibido
             // 
-            textrecibido.Location = new Point(307, 137);
+            textrecibido.Location = new Point(161, 218);
+            textrecibido.Multiline = true;
             textrecibido.Name = "textrecibido";
-            textrecibido.Size = new Size(100, 23);
+            textrecibido.Size = new Size(193, 138);
             textrecibido.TabIndex = 3;
             // 
             // buttonenviar
             // 
-            buttonenviar.Location = new Point(271, 180);
+            buttonenviar.Location = new Point(40, 247);
             buttonenviar.Name = "buttonenviar";
             buttonenviar.Size = new Size(75, 23);
             buttonenviar.TabIndex = 4;
@@ -81,7 +83,7 @@
             // buttonconectar
             // 
             buttonconectar.AccessibleRole = AccessibleRole.None;
-            buttonconectar.Location = new Point(376, 180);
+            buttonconectar.Location = new Point(237, 86);
             buttonconectar.Name = "buttonconectar";
             buttonconectar.Size = new Size(75, 23);
             buttonconectar.TabIndex = 5;
@@ -91,7 +93,7 @@
             // IPtext
             // 
             IPtext.AutoSize = true;
-            IPtext.Location = new Point(251, 53);
+            IPtext.Location = new Point(38, 89);
             IPtext.Name = "IPtext";
             IPtext.Size = new Size(37, 15);
             IPtext.TabIndex = 6;
@@ -100,7 +102,7 @@
             // labelpuerto
             // 
             labelpuerto.AutoSize = true;
-            labelpuerto.Location = new Point(251, 82);
+            labelpuerto.Location = new Point(33, 125);
             labelpuerto.Name = "labelpuerto";
             labelpuerto.Size = new Size(42, 15);
             labelpuerto.TabIndex = 7;
@@ -109,7 +111,7 @@
             // labelenvio
             // 
             labelenvio.AutoSize = true;
-            labelenvio.Location = new Point(231, 111);
+            labelenvio.Location = new Point(45, 191);
             labelenvio.Name = "labelenvio";
             labelenvio.Size = new Size(70, 15);
             labelenvio.TabIndex = 8;
@@ -118,15 +120,16 @@
             // labelmsg
             // 
             labelmsg.AutoSize = true;
-            labelmsg.Location = new Point(222, 140);
+            labelmsg.Location = new Point(212, 191);
             labelmsg.Name = "labelmsg";
-            labelmsg.Size = new Size(79, 15);
+            labelmsg.Size = new Size(100, 15);
             labelmsg.TabIndex = 9;
-            labelmsg.Text = "Msg Recibido";
+            labelmsg.Text = "Mensaje Recibido";
+            labelmsg.Click += labelmsg_Click;
             // 
             // buttonconnect
             // 
-            buttonconnect.Location = new Point(472, 180);
+            buttonconnect.Location = new Point(237, 122);
             buttonconnect.Name = "buttonconnect";
             buttonconnect.Size = new Size(75, 23);
             buttonconnect.TabIndex = 10;
@@ -135,11 +138,21 @@
             buttonconnect.TextImageRelation = TextImageRelation.ImageAboveText;
             buttonconnect.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // label1
+            // 
+            label1.Font = new Font("Britannic Bold", 15F);
+            label1.Location = new Point(59, 26);
+            label1.Name = "label1";
+            label1.Size = new Size(270, 23);
+            label1.TabIndex = 11;
+            label1.Text = "Mensajeria Simple Tarea 1";
+            // 
+            // Tarea1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(366, 400);
+            Controls.Add(label1);
             Controls.Add(buttonconnect);
             Controls.Add(labelmsg);
             Controls.Add(labelenvio);
@@ -151,8 +164,8 @@
             Controls.Add(textenvio);
             Controls.Add(textBoxpuerto);
             Controls.Add(textBoxIP);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Tarea1";
+            Text = "Tarea1";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -170,5 +183,6 @@
         private Label labelenvio;
         private Label labelmsg;
         private Button buttonconnect;
+        private Label label1;
     }
 }
